@@ -8,7 +8,7 @@
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 # -----------------------------------------------------------
 
-MONGO_NAMESPACE="mongo"
+MONGO_NAMESPACE="mas-mongo"
 
 function h1 {
   echo ""
