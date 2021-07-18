@@ -28,10 +28,14 @@ Kafka forms an important part of the internal communications for services in the
 
 ## 2. Supported Versions
 
-The followong Kafka server version releases are supported:
+Maximo Application Suite is compatible with **any stable 2.x** version of Apache Kafka. This includes [IBM Event Streams](https://www.ibm.com/cloud/event-streams) or [Strimzi](https://strimzi.io/).
 
-- `2.3.X`
-- `2.4.X`
+### 2.1 Specific Versions Tested
+
+The following versions have been tested with Maximo Application Suite. 
+
+- 2.3.x Running in IBM Event Streams
+- 2.6.x Running in Strimzi
 
 ## 3. Supported Deployment Details
 
@@ -84,6 +88,10 @@ The simplest method for intallation is via the Operator Hub in the RedHat OpenSh
 ![](kafka-resources/operatorhub.png)
 
 If you wish to manually install the operator, please refer to the Strimzi documentation [here](https://strimzi.io/docs/operators/master/using.html)
+
+**Important: To follow this guide, you must install from a channel that still supports the kafka.strimzi.io/v1beta1 API.**  
+
+We recommend you to use strimzi-0.22.x as this is the most recent release that supports the API used by this guide.  IBM Maximo Application Suite can support Kafka clusters deployed using the kafka.strimzi.io/v1 API, but this guide is written using the older API spec.
 
 ### 5.2 Defining a Storage Class
 
